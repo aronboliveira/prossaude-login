@@ -1,0 +1,188 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: inherit;
+  line-height: 1.4286;
+  font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+  font-size: 14px;
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
+#outerLoginCont {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+#outerLoginCont::before, #outerLoginCont::after {
+  content: "";
+  display: block;
+  height: 24px;
+}
+#outerLoginCont::before {
+  min-height: 30px;
+}
+
+#logoCont,
+#loginBtnCont {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding-bottom: 3vh;
+}
+
+#logoCont {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#loginBtnCont {
+  padding-top: 3vh;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+#logo {
+  max-width: 15vw;
+  max-height: 15vh;
+}
+
+#loginCont {
+  overflow: hidden;
+  overflow-y: auto;
+  height: auto;
+  min-height: 500px;
+  width: 450px;
+  padding: 48px 40px 36px;
+  margin: 0 auto;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  transition: all 0s ease 0.2s;
+  background: #fff;
+}
+
+#pw {
+  width: 80%;
+  border: none;
+}
+
+#spanShowPw {
+  padding-right: 2vw;
+  padding-left: 2vw;
+  border-bottom-right-radius: var(--bs-border-radius);
+  border-top-right-radius: var(--bs-border-radius);
+  background-color: transparent;
+  border-color: transparent;
+  border-left: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+#titleCont1 {
+  text-align: center;
+}
+
+#titleCont2 {
+  padding-bottom: 12px;
+}
+
+#headerCont {
+  text-align: center;
+}
+
+#titleText {
+  padding-bottom: 0;
+  padding-top: 16px;
+  color: rgb(32, 33, 36);
+  font-size: 24px;
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.3333;
+  margin-bottom: 0;
+  margin-top: 0;
+  word-break: break-word;
+}
+
+#subtitleText {
+  padding-bottom: 1px;
+  padding-top: 7px;
+  margin-bottom: 0;
+  margin-top: 0;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+#inputCont {
+  margin: auto;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 14px;
+  padding: 24px 0 0;
+  vertical-align: top;
+  white-space: normal;
+  width: 100%;
+}
+
+.loginInputCont1 {
+  margin: auto -40px;
+  margin-bottom: 16px;
+  margin-top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.loginInputCont2 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  box-sizing: content-box;
+  position: relative;
+  vertical-align: top;
+  text-align: left;
+  height: 56px;
+  width: 100%;
+  padding: 8px 0 0;
+  margin-top: 0;
+}
+
+#loginInputCont3 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.userInput {
+  display: block;
+  flex: 1;
+  margin: 1px 1px 0 1px;
+  line-height: 24px;
+  outline: none;
+  overflow: auto;
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in-element {
+  animation: fadeIn 1.5s ease-in;
+}
+
+.fade-in-late-element {
+  animation: fadeIn 2.5s ease-in;
+}
